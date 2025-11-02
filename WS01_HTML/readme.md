@@ -1,0 +1,1 @@
+lisäsin kuvan ja vaihdoin kokoa
