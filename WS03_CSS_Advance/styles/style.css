@@ -1,0 +1,112 @@
+p {
+  color: rgb(196, 10, 128);
+}
+
+body {
+  background-color: rgb(228, 216, 243);
+}
+
+h1 {
+  font-size: 2em;
+}
+div {
+      padding: 60px;
+      margin: 10px;
+    }
+table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 2px solid #671aaf;
+      padding: 4px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #e80c90;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #da1b8e;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #e463b9;
+    }
+    .transition-button {
+      background-color: #f00893;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      }
+      .transition-button:hover {
+        background-color: lightcoral;
+      }
+    .animation-box {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(246, 235, 242);
+        position: relative;
+        animation: move 2s infinite alternate;
+      }
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100px;
+        }
+      }
+      .pseudo-list li:nth-child(odd) {
+        background-color: #e80c90;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.696);
+      }
+      .filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+      .quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: lightgray;
+      }
