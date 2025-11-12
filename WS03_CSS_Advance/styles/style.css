@@ -1,9 +1,9 @@
 p {
-  color: rgb(196, 10, 128);
+  color: #360e0e;
 }
 
 body {
-  background-color: rgb(228, 216, 243);
+  background-color: #c6ac8f;
 }
 
 h1 {
@@ -19,13 +19,13 @@ table {
     }
     
     th, td {
-      border: 2px solid #671aaf;
+      border: 2px solid #3d211a;
       padding: 4px;
       text-align: left;
     }
     
     th {
-      background-color: #e80c90;
+      background-color: #6f4d38;
     }
     
     form {
@@ -45,7 +45,7 @@ table {
     }
     
     input[type="submit"] {
-      background-color: #da1b8e;
+      background-color: #6f4d38;
       color: white;
       padding: 10px;
       border: none;
@@ -53,10 +53,10 @@ table {
       cursor: pointer;
     }
     input[type="submit"]:hover {
-      background-color: #e463b9;
+      background-color: #3d211a;
     }
     .transition-button {
-      background-color: #f00893;
+      background-color: #6f4d38;
       color: black;
       padding: 10px 20px;
       border: none;
@@ -64,12 +64,12 @@ table {
       cursor: pointer;
       }
       .transition-button:hover {
-        background-color: lightcoral;
+        background-color: #3d211a;
       }
     .animation-box {
         width: 50px;
         height: 50px;
-        background-color: rgb(246, 235, 242);
+        background-color: #360e0e;
         position: relative;
         animation: move 2s infinite alternate;
       }
@@ -80,13 +80,18 @@ table {
         to {
           left: 100px;
         }
+        
       }
       .pseudo-list li:nth-child(odd) {
-        background-color: #e80c90;
+        background-color: #6f4d38;
       }
       
       .pseudo-list li:nth-child(even) {
-        background-color: rgba(255, 255, 255, 0.696);
+        background-color: #a07856;
+      }
+      .pseudo-list {
+      list-style: none;
+  
       }
       .filter-image {
         filter: grayscale(100%);
