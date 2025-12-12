@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aroma</title>
+
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+
+        <!-- HEADER -->
+      <header>
+        <div class="brand">
+          <div class="logo">A</div>
+        </div>
+
+        <nav>
+            <ul>
+       <li class="mobile"><a href="index.html">Home</a></li>
+       <li class="mobile"><a href="menu.html">Menu</a></li>
+       <li class="mobile"><a href="about.html">About</a></li>
+       <li class="mobile"><a href="gallery.html">Gallery</a></li>
+       <li class="mobile"><a href="contact.html" class="cta">Book a Table</a></li>
+       <li class="desktop"><a href="index.html">Home</a></li>
+       <li class="desktop"><a href="menu.html">Menu</a></li>
+       <li class="desktop"><a href="about.html">About</a></li>
+       <li class="desktop"><a href="gallery.html">Gallery</a></li>
+       <li class="desktop"><a href="contact.html" class="cta">Book a Table</a></li>
+            </ul>
+        </nav>
+        <h1>Home</h1>
+      </header>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-card">
+          <h1>Welcome to Aroma Coffee Shop</h1>
+          <p class="lead">
+            A peaceful place to enjoy craft coffees and pastries.
+          </p>
+
+          <div class="hero-info">
+            <div>
+              <strong>Open Now</strong>
+              <span>Mon–Sun 08:00 – 20:00</span>
+            </div>
+            <a href="#menu" class="cta">View Menu</a>
+          </div>
+
+          <div class="hero-row">
+            <div class="card">
+              <strong>Specialty Coffee</strong>
+              <p>Freshly roasted – seasonal flavors available.</p>
+            </div>
+
+            <div class="card rating">
+              <div>
+                <div class="rating-value">4.8</div>
+                <div class="rating-label">Customer Feedback</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="hero-img"
+            style="
+              background-image: url('images/coffe.jpg');
+            "
+          ></div>
+        </div>
+      </section>
+
+      <!-- MENU -->
+      <section id="menu" class="section">
+        <h2>Menu</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Coffees</h3>
+            <div class="menu-item"><span>Espresso</span><span>2.50€</span></div>
+            <div class="menu-item">
+              <span>Flat White</span><span>3.80€</span>
+            </div>
+            <div class="menu-item">
+              <span>Cappuccino</span><span>3.20€</span>
+            </div>
+            <div class="menu-item">
+              <span>Filter Coffee</span><span>2.20€</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Specialties</h3>
+            <div class="menu-item">
+              <span>Flavored Latte</span><span>4.20€</span>
+            </div>
+            <div class="menu-item">
+              <span>Cold Brew</span><span>4.00€</span>
+            </div>
+            <div class="menu-item">
+              <span>Matcha Latte</span><span>4.10€</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Pastries</h3>
+            <div class="menu-item"><span>Roll</span><span>2.50€</span></div>
+            <div class="menu-item">
+              <span>Slice of Cake</span><span>3.90€</span>
+            </div>
+            <div class="menu-item">
+              <span>Croissant</span><span>2.90€</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="about-wrap">
+          <div class="card about-card">
+            <h3>About Us</h3>
+            <p>
+              A small local coffee shop focused on great taste and sustainability.
+            </p>
+            <ul>
+              <li>Fresh roast weekly</li>
+              <li>Vegetarian and gluten-free options</li>
+              <li>Free Wi-Fi</li>
+            </ul>
+          </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=60"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1521302080390-9e9efc4b2f45?auto=format&fit=crop&w=800&q=60"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=60"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1506086679529-7bf6133cdbb4?auto=format&fit=crop&w=800&q=60"
+          />
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <h2>Contact / Reserve a Table</h2>
+
+        <div class="contact-wrap">
+          <form onsubmit="submitForm(event)">
+            <input id="name" placeholder="Name" required />
+            <input id="email" type="email" placeholder="Email" required />
+            <input id="phone" placeholder="Phone (optional)" />
+            <textarea id="message" rows="4" placeholder="Message"></textarea>
+
+            <div class="form-buttons">
+              <button type="submit">Send</button>
+              <button type="button" class="clear-btn" onclick="clearForm()">
+                Clear
+              </button>
+            </div>
+            <p id="formResponse"></p>
+          </form>
+
+          <div class="card contact-info">
+            <h3>Opening Hours</h3>
+            <p>Mon–Fri 08:00–18:00<br />Sat–Sun 09:00–20:00</p>
+
+            <h3>Address</h3>
+            <p>Example Street 5, 00100 Helsinki</p>
+
+            <h3>Follow Us</h3>
+            <p>Instagram · Facebook · TikTok</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>© <span id="year"></span> Coffee Shop Example 2025</footer>
+    </div>
+  </body>
+</html>
