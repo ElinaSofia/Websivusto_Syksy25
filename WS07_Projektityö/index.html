@@ -1,235 +1,124 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Coffee Shop Aroma — Welcome</title>
-  <meta name="description" content="A warm and cozy coffee shop in the heart of the city. Explore our selection and come enjoy!">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --accent:#6B4226; /* lattekahvinruskea */
-      --muted:#6b7280;
-      --bg:#faf7f4;
-      --card:#fff;
-      --radius:14px;
-      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{margin:0;background:var(--bg);color:#111;line-height:1.45}
-    .container{max-width:1100px;margin:0 auto;padding:28px}
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Aroma</title>
 
-    /* Header */
-    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
-    .brand{display:flex;gap:14px;align-items:center}
-    .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,#a87a56,#6b4226);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
-    nav{display:flex;gap:18px;align-items:center}
-    nav a{color:var(--muted);text-decoration:none;font-weight:600}
-    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none}
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    /* Hero */
-    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin:24px 0}
-    .hero-card{background:var(--card);border-radius:var(--radius);padding:28px;box-shadow:0 10px 25px rgba(15,15,15,0.06)}
-    h1{margin:0 0 10px;font-size:34px}
-    p.lead{margin:0;color:var(--muted)}
-    .hero-img{border-radius:12px;overflow:hidden;height:320px;background-size:cover;background-position:center}
-
-    /* Sections */
-    .section{margin:36px 0}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 20px rgba(12,12,12,0.04)}
-    .menu-item{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px dashed #eee}
-    .menu-item:last-child{border-bottom:0}
-
-    /* Gallery */
-    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:8px}
-
-    /* Contact */
-    form{display:grid;gap:8px}
-    input,textarea{padding:10px;border-radius:8px;border:1px solid #e6e2df}
-    button{padding:10px 14px;border-radius:10px;border:0;background:var(--accent);color:white;font-weight:600}
-
-    /* Footer */
-    footer{margin-top:36px;padding:18px 0;color:var(--muted);font-size:14px;text-align:center}
-
-    /* Responsive */
-    @media (max-width:980px){
-      .hero{grid-template-columns:1fr;}
-      .grid-3{grid-template-columns:repeat(2,1fr)}
-      .gallery{grid-template-columns:repeat(2,1fr)}
-    }
-    @media (max-width:560px){
-      nav{display:none}
-      header{gap:12px}
-      .grid-3{grid-template-columns:1fr}
-      .gallery img{height:110px}
-    }
-
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">AS</div>
-        <div>
-          <div style="font-weight:700">Coffee Shop Aroma</div>
-          <div style="font-size:13px;color:var(--muted)">The city's own coffee shop</div>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header>
+        <div class="brand">
+          <div class="logo">A</div>
         </div>
-      </div>
-      <nav>
-        <a href="#menu">Menu</a>
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact" class="cta">Book a Table</a>
-      </nav>
-    </header>
+        <nav>
+          <ul>
+            <li class="mobile"><a href="index.html">Home</a></li>
+            <li class="mobile"><a href="Menu.html">Menu</a></li>
+            <li class="mobile"><a href="About.html">About</a></li>
+            <li class="mobile"><a href="Gallery.html">Gallery</a></li>
+            <li class="mobile"><a href="Contact.html">Book a Table</a></li>
+            <li class="desktop"><a href="index.html">Home</a></li>
+            <li class="desktop"><a href="Menu.html">Menu</a></li>
+            <li></li>
+            <li class="desktop"><a href="About.html">About</a></li>
+            <li class="desktop"><a href="Gallery.html">Gallery</a></li>
+            <li class="desktop"><a href="Contact.html">Book a Table</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    
-    <section class="hero">
-      <div class="hero-card">
-        <h1>Welcome to Coffee Shop Aroma</h1>
-        <p class="lead">A peaceful place to enjoy artisanal coffees and pastries. Open every day — friendly service and quality flavors.</p>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-card">
+          <h1>Welcome to Aroma Coffee Shop</h1>
+          <p class="lead">
+            A peaceful place to enjoy craft coffees and pastries.
+          </p>
 
-        <div style="display:flex;gap:12px;margin-top:18px;align-items:center">
-          <div style="display:flex;flex-direction:column">
-            <strong>Open Now</strong>
-            <span style="color:var(--muted)">Mon–Sun 08:00 – 20:00</span>
+          <div class="hero-info">
+            <div>
+              <strong>Open Now</strong>
+              <span>Mon–Sun 08:00 – 18:00 (20:00)</span>
+            </div>
+            <a href="Menu.html" class="cta">View Menu</a>
           </div>
-          <a href="#menu" class="cta">Explore the Menu</a>
-        </div>
 
-        <div style="margin-top:22px;display:flex;gap:12px">
-          <div class="card" style="flex:1">
-            <strong>Specialty Coffee</strong>
-            <p style="margin:6px 0;color:var(--muted)">Slowly roasted fresh — recommended to try with seasonal spices.</p>
-          </div>
-          <div class="card" style="width:140px;display:flex;align-items:center;justify-content:center">
-            <div style="text-align:center">
-              <div style="font-weight:700;font-size:18px">4.8</div>
-              <div style="font-size:12px;color:var(--muted)">Customer Feedback</div>
+          <div class="hero-row">
+            <div class="card">
+              <strong>Specialty Coffee</strong>
+              <p>Freshly roasted – seasonal flavors available.</p>
+            </div>
+
+            <div class="card rating">
+              <div>
+                <div class="rating-value">4.8</div>
+                <div class="rating-label">Customer Feedback</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <div class="hero-img" style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80')"></div>
-      </div>
-    </section>
-
-    
-    <section id="menu" class="section">
-      <h2>Menu</h2>
-      <div class="grid-3" style="margin-top:12px">
-        <div class="card">
-          <h3>Coffees</h3>
-          <div class="menu-item"><div>Espresso</div><div>2.50€</div></div>
-          <div class="menu-item"><div>Flat White</div><div>3.80€</div></div>
-          <div class="menu-item"><div>Cappuccino</div><div>3.20€</div></div>
-          <div class="menu-item"><div>Filter Coffee</div><div>2.20€</div></div>
+        <div>
+          <div
+            class="hero-img"
+            style="background-image: url('images/coffe.jpg')"
+          ></div>
         </div>
+      </section>
 
-        <div class="card">
-          <h3>Specialties</h3>
-          <div class="menu-item"><div>Latte with spices</div><div>4.20€</div></div>
-          <div class="menu-item"><div>Cold Brew</div><div>4.00€</div></div>
-          <div class="menu-item"><div>Matcha latte</div><div>4.10€</div></div>
-        </div>
-
-        <div class="card">
-          <h3>Pastries</h3>
-          <div class="menu-item"><div>Roll</div><div>2.50€</div></div>
-          <div class="menu-item"><div>Slice of Cake</div><div>3.90€</div></div>
-          <div class="menu-item"><div>Croissant</div><div>2.90€</div></div>
-        </div>
-      </div>
-    </section>
-
-    
-    <section id="about" class="section">
-      <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap">
-        <div style="flex:1;min-width:260px" class="card">
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="card about-card">
           <h3>About Us</h3>
-          <p style="color:var(--muted)">A small local coffee shop focused on sustainability and great taste. We use fair trade beans and support local bakers.</p>
-          <ul style="color:var(--muted)">
-            <li>Freshly roasted every week</li>
+          <p>
+            A small local coffee shop focused on great taste and sustainability.
+          </p>
+          <ul>
+            <li>Fresh roast weekly</li>
             <li>Vegetarian and gluten-free options</li>
             <li>Free Wi-Fi</li>
           </ul>
         </div>
+      </section>
 
-        <div style="width:20px;border-radius:12px;overflow:hidden;box-shadow:0 10px 20px rgba(12,12,12,0.05)">
-      </div>
-    </section>
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <h2>Contact Us</h2>
 
-    <!-- GALLERY -->
-    <section id="gallery" class="section">
-      <h2>Gallery</h2>
-      <div class="gallery" style="margin-top:12px">
-        <img src="images/coffe.jpg" alt="coffee">
-        <img src="images/Morning vibes 🥐 Diana Atli @dianaatli.jpg" alt="Pastries">
-        <img src="images/Cafè lounge old.jpg" alt="Lounge">
-        <img src="images/three cups filled with ground coffee.jpg" alt ="Coffee cups">
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <h2>Contact / Book a Table</h2>
-      <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start">
-        <div>
+        <div class="contact-wrap">
           <form onsubmit="submitForm(event)">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="text" id="phone" placeholder="Phone (optional)">
-            <textarea id="message" rows="4" placeholder="Message / booking details"></textarea>
-            <div style="display:flex;gap:8px;margin-top:8px">
+            <input id="name" placeholder="Name" required />
+            <input id="email" type="email" placeholder="Email" required />
+            <input id="phone" placeholder="Phone (optional)" />
+            <textarea id="message" rows="4" placeholder="Message"></textarea>
+
+            <div class="form-buttons">
               <button type="submit">Send</button>
-              <button type="button" onclick="clearForm()" style="background:#eee;color:#111">Clear</button>
+              <button type="button" onclick="resetForm()">Clear</button>
             </div>
+            <p id="formResponse"></p>
           </form>
-          <p id="formResponse" style="color:var(--muted);font-size:14px;margin-top:8px"></p>
+
+          <div class="card contact-info">
+            <h3>Opening Hours</h3>
+            <p>Mon–Fri 08:00–18:00<br />Sat–Sun 09:00–20:00</p>
+
+            <h3>Address</h3>
+            <p>25 Wall St, NY 10005</p>
+
+            <h3>Follow Us</h3>
+            <p>Instagram · Facebook · TikTok</p>
+          </div>
         </div>
+      </section>
 
-        <div class="card">
-          <h3>Opening Hours</h3>
-          <p style="margin:6px 0">Mon–Fri 08:00–18:00<br>Sat–Sun 09:00–20:00</p>
-          <h3>Address</h3>
-          <p style="margin:6px 0;color:var(--muted)">Wall Street 45, 00100 New York</p>
-          <h3>Follow Us</h3>
-          <p style="margin:6px 0;color:var(--muted)">Instagram · Facebook · TikTok</p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      &copy; <span id="year"></span> Coffee Shop Example · All rights reserved
-    </footer>
-  </div>
-
-  <script>
-    // small script for client-side form
-    document.getElementById('year').textContent = new Date().getFullYear();
-    function submitForm(e){
-      e.preventDefault();
-      // TODO: replace with backend API or email sending
-      const name = document.getElementById('name').value;
-      const resp = document.getElementById('formResponse');
-      resp.textContent = `Thank you ${name}! We have received your booking request (demo).`;
-      resp.style.color = 'green';
-      // clear form
-      setTimeout(() => { clearForm(); }, 1400);
-    }
-    function clearForm(){
-      ['name','email','phone','message'].forEach(id=>document.getElementById(id).value='');
-      const resp = document.getElementById('formResponse');
-      resp.textContent = '';
-    }
-  </script>
-</body>
+      <!-- FOOTER -->
+      <footer>© <span id="year"></span> Coffee Shop Example 2025</footer>
+    </div>
+  </body>
 </html>
