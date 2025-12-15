@@ -1,237 +1,309 @@
-<link rel="stylesheet" href="style.css" />
-  <title>Menu - Cozy Coffee</title>
-<section id="menu" class="section">
-        <div class="menu-wrap">
-          <div class="card menu-card">
-            <h3>Our Menu</h3>
-            <p>Freshly brewed coffee & homemade treats</p>
-   <div class="container">
-        <div class="menu-categories">
-            <button class="category-btn active" onclick="showCategory('all')">All</button>
-            <button class="category-btn" onclick="showCategory('coffee')">Coffee</button>
-            <button class="category-btn" onclick="showCategory('beverages')">Other Beverages</button>
-            <button class="category-btn" onclick="showCategory('food')">Food</button>
-            <button class="category-btn" onclick="showCategory('pastries')">Pastries</button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Cozy Coffee</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>☕ Our Menu</h1>
+      <p>Freshly brewed coffee & homemade treats</p>
+      <nav>
+        <ul>
+          <li class="mobile"><a href="index.html">Home</a></li>
+          <li class="mobile"><a href="Menu.html">Menu</a></li>
+          <li class="mobile"><a href="About.html">About</a></li>
+          <li class="mobile"><a href="Gallery.html">Gallery</a></li>
+          <li class="mobile"><a href="Contact.html">Book a Table</a></li>
+          <li class="desktop"><a href="index.html">Home</a></li>
+          <li class="desktop"><a href="Menu.html">Menu</a></li>
+          <li></li>
+          <li class="desktop"><a href="About.html">About</a></li>
+          <li class="desktop"><a href="Gallery.html">Gallery</a></li>
+          <li class="desktop"><a href="Contact.html">Book a Table</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="menu-categories">
+        <button class="category-btn active" onclick="showCategory('all')">
+          All
+        </button>
+        <button class="category-btn" onclick="showCategory('coffee')">
+          Coffee
+        </button>
+        <button class="category-btn" onclick="showCategory('beverages')">
+          Other Beverages
+        </button>
+        <button class="category-btn" onclick="showCategory('food')">
+          Food
+        </button>
+        <button class="category-btn" onclick="showCategory('pastries')">
+          Pastries
+        </button>
+      </div>
+
+      <div class="menu-section" data-category="coffee">
+        <h2 class="section-title">☕ Coffee</h2>
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Espresso $3.00</h3>
+            <p class="item-description">
+              Rich and bold shot of pure espresso, expertly extracted from our
+              signature blend
+            </p>
+          </div>
+          <div class="item-tags">
+            <span class="tag">Hot</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Cappuccino $4.50</h3>
+            <p class="item-description">
+              Perfect balance of espresso, steamed milk, and velvety foam
+            </p>
+          </div>
+          <div class="item-tags">
+            <span class="tag">Hot</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Caffe Latte $4.75</h3>
+            <p class="item-description">
+              Smooth espresso with steamed milk and a touch of foam
+            </p>
+          </div>
+          <div class="item-tags">
+            <span class="tag">Hot</span>
+            <span class="tag">Iced</span>
+          </div>
         </div>
 
-        <div class="menu-section" data-category="coffee">
-            <h2 class="section-title">☕ Coffee</h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Espresso</h3>
-                        <span class="item-price">$3.50</span>
-                    </div>
-                    <p class="item-description">Rich and bold shot of pure espresso, expertly extracted from our signature blend</p>
-                    <div class="item-tags">
-                        <span class="tag">Hot</span>
-      
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Cappuccino</h3>
-                        <span class="item-price">$4.50</span>
-                    </div>
-                    <p class="item-description">Perfect balance of espresso, steamed milk, and velvety foam</p>
-                    <div class="item-tags">
-                        <span class="tag">Hot</span>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Caffe Latte</h3>
-                        <span class="item-price">$4.75</span>
-                    </div>
-                    <p class="item-description">Smooth espresso with steamed milk and a touch of foam</p>
-                    <div class="item-tags">
-                        <span class="tag">Hot</span>
-                        <span class="tag">Iced</span>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Caramel Macchiato</h3>
-                        <span class="item-price">$5.25</span>
-                    </div>
-                    <p class="item-description">Vanilla-flavored latte marked with espresso and finished with caramel drizzle</p>
-                    <div class="item-tags">
-                        <span class="tag">Hot</span>
-                        <span class="tag">Iced</span>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Mocha</h3>
-                        <span class="item-price">$5.00</span>
-                    </div>
-                    <p class="item-description">Espresso with rich chocolate, steamed milk, and whipped cream</p>
-                    <div class="item-tags">
-                        <span class="tag">Hot</span>
-                        <span class="tag">Iced</span>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Cold Brew</h3>
-                        <span class="item-price">$4.50</span>
-                    </div>
-                    <p class="item-description">Smooth, sweet cold-steeped coffee served over ice</p>
-                    <div class="item-tags">
-                        <span class="tag">Iced</span>
-                    </div>
-                </div>
-            </div>
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Caramel Macchiato $5.25</h3>
+            <p class="item-d escription">
+              Vanilla-flavored latte marked with espresso and finished with
+              caramel drizzle
+            </p>
+          </div>
+          <div class="item-tags">
+            <span class="tag">Hot</span>
+            <span class="tag">Iced</span>
+          </div>
         </div>
 
-        <div class="menu-section" data-category="beverages">
-            <h2 class="section-title">🥤 Other Beverages</h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Chai Latte</h3>
-                        <span class="item-price">$4.75</span>
-                    </div>
-                    <p class="item-description">Spiced black tea with steamed milk and honey</p>
-                    <div class="item-tags">
-                        <span class="tag">Hot</span>
-                        <span class="tag">Iced</span>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Matcha Latte</h3>
-                        <span class="item-price">$5.00</span>
-                    </div>
-                    <p class="item-description">Premium Japanese green tea powder with steamed milk</p>
-                    <div class="item-tags">
-                        <span class="tag">Hot</span>
-                        <span class="tag">Iced</span>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Hot Chocolate</h3>
-                        <span class="item-price">$3.75</span>
-                    </div>
-                    <p class="item-description">Rich Belgian chocolate with steamed milk and whipped cream</p>
-                    <div class="item-tags">
-                        <span class="tag">Hot</span>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Fresh Juice</h3>
-                        <span class="item-price">$4.25</span>
-                    </div>
-                    <p class="item-description">Orange or apple juice, freshly squeezed daily</p>
-                    <div class="item-tags">
-                        <span class="tag">Cold</span>
-                    </div>
-                </div>
-            </div>
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Mocha $5.00</h3>
+            <p class="item-description">
+              Espresso with rich chocolate, steamed milk, and whipped cream
+            </p>
+          </div>
+          <div class="item-tags">
+            <span class="tag">Hot</span>
+            <span class="tag">Iced</span>
+          </div>
         </div>
 
-        <div class="menu-section" data-category="food">
-            <h2 class="section-title">🥪 Food</h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Avocado Toast</h3>
-                        <span class="item-price">$8.50</span>
-                    </div>
-                    <p class="item-description">Smashed avocado on sourdough with cherry tomatoes, feta, and olive oil</p>
-                    <div class="item-tags">
-                        <span class="tag">Vegetarian</span>
-                    </div>
-                </div>
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Cold Brew $4.50</h3>
+            <p class="item-description">
+              Smooth, sweet cold-steeped coffee served over ice
+            </p>
+          </div>
+          <div class="item-tags">
+            <span class="tag">Iced</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Breakfast Sandwich</h3>
-                        <span class="item-price">$7.50</span>
-                    </div>
-                    <p class="item-description">Egg, cheese, and your choice of bacon or sausage on a toasted bagel</p>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Caprese Panini</h3>
-                        <span class="item-price">$9.00</span>
-                    </div>
-                    <p class="item-description">Fresh mozzarella, tomatoes, basil, and balsamic glaze on pressed ciabatta</p>
-                    <div class="item-tags">
-                        <span class="tag">Vegetarian</span>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Turkey & Brie Sandwich</h3>
-                        <span class="item-price">$9.50</span>
-                    </div>
-                    <p class="item-description">Roasted turkey, brie cheese, apple slices, and honey mustard</p>
-                </div>
-            </div>
+    <div class="menu-section" data-category="beverages">
+      <h2 class="section-title">🥤 Other Beverages</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Chai Latte $4.75</h3>
+            <p class="item-description">
+              Spiced black tea with steamed milk and honey
+            </p>
+          </div>
+          <div class="item-tags">
+            <span class="tag">Hot</span>
+            <span class="tag">Iced</span>
+          </div>
         </div>
 
-        <div class="menu-section" data-category="pastries">
-            <h2 class="section-title">🥐 Pastries & Sweets</h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Croissant</h3>
-                        <span class="item-price">$3.50</span>
-                    </div>
-                    <p class="item-description">Buttery, flaky French pastry baked fresh daily</p>
-                </div>
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Matcha Latte $5.00</h3>
+            <p class="item-description">
+              Premium Japanese green tea powder with steamed milk
+            </p>
+          </div>
+          <div class="item-tags">
+            <span class="tag">Hot</span>
+            <span class="tag">Iced</span>
+          </div>
+        </div>
 
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Chocolate Muffin</h3>
-                        <span class="item-price">$3.75</span>
-                    </div>
-                    <p class="item-description">Double chocolate muffin with chocolate chips</p>
-                </div>
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Hot Chocolate $3.75</h3>
+            <p class="item-description">
+              Rich Belgian chocolate with steamed milk and whipped cream
+            </p>
+          </div>
+          <div class="item-tags">
+            <span class="tag">Hot</span>
+          </div>
+        </div>
 
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Blueberry Scone</h3>
-                        <span class="item-price">$4.00</span>
-                    </div>
-                    <p class="item-description">Fresh blueberries in a tender, buttery scone</p>
-                </div>
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Fresh Juice $4.25</h3>
+            <p class="item-description">
+              Orange or apple juice, freshly squeezed daily
+            </p>
+          </div>
+          <div class="item-tags">
+            <span class="tag">Cold</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Cinnamon Roll</h3>
-                        <span class="item-price">$4.50</span>
-                    </div>
-                    <p class="item-description">Warm cinnamon roll with cream cheese frosting</p>
-                </div>
+    <div class="menu-section" data-category="food">
+      <h2 class="section-title">🥪 Food</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Avocado Toast $8.50</h3>
+            <p class="item-description">
+              Smashed avocado on sourdough with cherry tomatoes, feta, and olive
+              oil
+            </p>
+          </div>
+          <div class="item-tags">
+            <span class="tag">Vegetarian</span>
+          </div>
+        </div>
 
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Brownie</h3>
-                        <span class="item-price">$3.50</span>
-                    </div>
-                    <p class="item-description">Fudgy chocolate brownie with walnuts</p>
-                </div>
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Breakfast Sandwich $7.50</h3>
+            <p class="item-description">
+              Egg, cheese, and your choice of bacon or sausage on a toasted
+              bagel
+            </p>
+          </div>
+        </div>
 
-                <div class="menu-item">
-                    <div class="item-header">
-                        <h3 class="item-name">Cookies</h3>
-                        <span class="item-price">$2.75</span>
-                    </div>
-                    <p class="item-description">Chocolate chip, oatmeal raisin, or white chocolate macadamia</p>
-                </div>
-                </div>         
-                </section>
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Caprese Panini $9.00</h3>
+            <p class="item-description">
+              Fresh mozzarella, tomatoes, basil, and balsamic glaze on pressed
+              ciabatta
+            </p>
+          </div>
+          <div class="item-tags">
+            <span class="tag">Vegetarian</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Turkey & Brie Sandwich $9.50</h3>
+            <p class="item-description">
+              Roasted turkey, brie cheese, apple slices, and honey mustard
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-section" data-category="pastries">
+      <h2 class="section-title">🥐 Pastries & Sweets</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Croissant $3.50</h3>
+            <p class="item-description">
+              Buttery, flaky French pastry baked fresh daily
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Chocolate Muffin $3.75</h3>
+            <p class="item-description">
+              Double chocolate muffin with chocolate chips
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Blueberry Scone $4.00</h3>
+            <p class="item-description">
+              Fresh blueberries in a tender, buttery scone
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Cinnamon Roll $4.50</h3>
+            <p class="item-description">
+              Warm cinnamon roll with cream cheese frosting
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Brownie $3.50</h3>
+            <p class="item-description">Fudgy chocolate brownie with walnuts</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-text">
+            <h3 class="item-name">Cookies $2.75</h3>
+            <p class="item-description">
+              Chocolate chip, oatmeal raisin, or white chocolate macadamia
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <footer>© <span id="year"></span> Coffee Shop Example 2025</footer>
+    </div>
+    <script>
+      function showCategory(category) {
+        const sections = document.querySelectorAll(".menu-section");
+        const buttons = document.querySelectorAll(".category-btn");
+
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        event.target.classList.add("active");
+
+        sections.forEach((section) => {
+          if (category === "all") {
+            section.style.display = "block";
+          } else {
+            section.style.display =
+              section.dataset.category === category ? "block" : "none";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
